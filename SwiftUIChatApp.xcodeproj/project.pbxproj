@@ -11,6 +11,17 @@
 		6C20249526B1D8BA00621376 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C20249426B1D8BA00621376 /* ContentView.swift */; };
 		6C20249726B1D8BC00621376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C20249626B1D8BC00621376 /* Assets.xcassets */; };
 		6C20249A26B1D8BC00621376 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C20249926B1D8BC00621376 /* Preview Assets.xcassets */; };
+		6C2024AA26B1D9BE00621376 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024A926B1D9BE00621376 /* LoginView.swift */; };
+		6C2024AD26B1DC1E00621376 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024AC26B1DC1E00621376 /* RegistrationView.swift */; };
+		6C2024CE26B3312C00621376 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024CD26B3312C00621376 /* CustomTextField.swift */; };
+		6C2024D126B3451900621376 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024D026B3451900621376 /* MainTabView.swift */; };
+		6C2024D626B347AD00621376 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024D526B347AD00621376 /* SettingsView.swift */; };
+		6C2024D826B347BB00621376 /* ChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024D726B347BB00621376 /* ChannelsView.swift */; };
+		6C2024DA26B347C700621376 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024D926B347C700621376 /* ChatView.swift */; };
+		6C2024DD26B3480300621376 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024DC26B3480300621376 /* ConversationView.swift */; };
+		6C2024DF26B3C3FB00621376 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024DE26B3C3FB00621376 /* SettingsHeaderView.swift */; };
+		6C2024E126B3C6CA00621376 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024E026B3C6CA00621376 /* SettingCell.swift */; };
+		6C2024E326B44D2A00621376 /* SettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2024E226B44D2A00621376 /* SettingCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +31,17 @@
 		6C20249626B1D8BC00621376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C20249926B1D8BC00621376 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6C20249B26B1D8BC00621376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C2024A926B1D9BE00621376 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6C2024AC26B1DC1E00621376 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		6C2024CD26B3312C00621376 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		6C2024D026B3451900621376 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		6C2024D526B347AD00621376 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6C2024D726B347BB00621376 /* ChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsView.swift; sourceTree = "<group>"; };
+		6C2024D926B347C700621376 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		6C2024DC26B3480300621376 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		6C2024DE26B3C3FB00621376 /* SettingsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderView.swift; sourceTree = "<group>"; };
+		6C2024E026B3C6CA00621376 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		6C2024E226B44D2A00621376 /* SettingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,11 @@
 		6C20249126B1D8BA00621376 /* SwiftUIChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				6C2024A826B1D91300621376 /* Model */,
+				6C2024A726B1D91100621376 /* View */,
+				6C2024A626B1D90C00621376 /* ViewModel */,
+				6C2024A426B1D8FF00621376 /* API */,
+				6C2024A126B1D8EC00621376 /* Utils */,
 				6C20249226B1D8BA00621376 /* SwiftUIChatAppApp.swift */,
 				6C20249426B1D8BA00621376 /* ContentView.swift */,
 				6C20249626B1D8BC00621376 /* Assets.xcassets */,
@@ -67,6 +94,100 @@
 				6C20249926B1D8BC00621376 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C2024A126B1D8EC00621376 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024CD26B3312C00621376 /* CustomTextField.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6C2024A426B1D8FF00621376 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6C2024A626B1D90C00621376 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024E226B44D2A00621376 /* SettingCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6C2024A726B1D91100621376 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024DB26B347EF00621376 /* Conversations */,
+				6C2024D426B3468000621376 /* Settings */,
+				6C2024D326B3467900621376 /* Channels */,
+				6C2024D226B3467100621376 /* Chats */,
+				6C2024CF26B3450600621376 /* Main */,
+				6C2024AB26B1DBAD00621376 /* Authentication */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6C2024A826B1D91300621376 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C2024AB26B1DBAD00621376 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024A926B1D9BE00621376 /* LoginView.swift */,
+				6C2024AC26B1DC1E00621376 /* RegistrationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6C2024CF26B3450600621376 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024D026B3451900621376 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C2024D226B3467100621376 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024D926B347C700621376 /* ChatView.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		6C2024D326B3467900621376 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024D726B347BB00621376 /* ChannelsView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		6C2024D426B3468000621376 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024D526B347AD00621376 /* SettingsView.swift */,
+				6C2024DE26B3C3FB00621376 /* SettingsHeaderView.swift */,
+				6C2024E026B3C6CA00621376 /* SettingCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6C2024DB26B347EF00621376 /* Conversations */ = {
+			isa = PBXGroup;
+			children = (
+				6C2024DC26B3480300621376 /* ConversationView.swift */,
+			);
+			path = Conversations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +259,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C2024D626B347AD00621376 /* SettingsView.swift in Sources */,
+				6C2024AA26B1D9BE00621376 /* LoginView.swift in Sources */,
+				6C2024E126B3C6CA00621376 /* SettingCell.swift in Sources */,
+				6C2024E326B44D2A00621376 /* SettingCellViewModel.swift in Sources */,
 				6C20249526B1D8BA00621376 /* ContentView.swift in Sources */,
+				6C2024DF26B3C3FB00621376 /* SettingsHeaderView.swift in Sources */,
 				6C20249326B1D8BA00621376 /* SwiftUIChatAppApp.swift in Sources */,
+				6C2024DA26B347C700621376 /* ChatView.swift in Sources */,
+				6C2024D826B347BB00621376 /* ChannelsView.swift in Sources */,
+				6C2024AD26B1DC1E00621376 /* RegistrationView.swift in Sources */,
+				6C2024CE26B3312C00621376 /* CustomTextField.swift in Sources */,
+				6C2024D126B3451900621376 /* MainTabView.swift in Sources */,
+				6C2024DD26B3480300621376 /* ConversationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
