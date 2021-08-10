@@ -20,6 +20,7 @@ struct SettingsHeaderView: View {
                 Text("Shrikanta Mazumder")
                     .bold()
                     .font(.system(size: 18))
+                    .foregroundColor(.black)
                 Text("Available")
                     .font(.system(size: 14))
                     .foregroundColor(.gray)
