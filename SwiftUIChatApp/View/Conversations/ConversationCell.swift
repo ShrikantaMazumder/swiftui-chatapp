@@ -23,6 +23,7 @@ struct ConversationCell: View {
                         .font(.system(size: 15))
                 }
             }
+            .foregroundColor(.black)
             .padding(.top)
             Divider()
         }

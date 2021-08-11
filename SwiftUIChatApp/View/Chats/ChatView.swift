@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct ChatView: View {
+    @State private var messageText = ""
+    @ObservedObject var chatViewModel = ChatViewModel()
     var body: some View {
-        Text("Chats")
+        VStack {
+            // Message
+            ScrollView {
+                VStack(alignment: .leading) {
+                    ForEach(chatViewModel.messages) {message in
+                        MessageView(isFromCurrentUser: message.isFromCurrentUser, message: message.message)
+                    }
+                }
+            }
+            ///Input field
+            CustomInputView(inputData: $messageText, action: sendMessage)
+        }
+        .padding(.vertical)
+        .navigationTitle("Venom")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func sendMessage() {
+        chatViewModel.sendMessage(messageText)
+        messageText = ""
     }
 }
 
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChatView()
-    }
-}
