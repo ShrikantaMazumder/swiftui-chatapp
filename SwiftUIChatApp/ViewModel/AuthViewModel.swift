@@ -6,10 +6,27 @@
 //
 
 import Firebase
+import UIKit
 
 class AuthViewModel: NSObject, ObservableObject {
-    func singIn() {
-        
+    @Published var didAuthenticateUser = false
+    @Published var userSession: FirebaseAuth.User?
+    private var currentTempUser: FirebaseAuth.User?
+    
+    override init() {
+        userSession = Auth.auth().currentUser
+    }
+    
+    func singIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("Debug: Failed to signIn \(error.localizedDescription)")
+                return
+            }
+//            guard let user = result?.user else { return }
+            self.userSession = result?.user
+            
+        }
     }
     
     func registration(withEmail email: String, password: String, userName: String, fullName: String) {
@@ -20,6 +37,8 @@ class AuthViewModel: NSObject, ObservableObject {
             }
             
             guard let user = result?.user else { return }
+            self.currentTempUser = user
+            
             let data: [String:Any] = [
                 "email": email,
                 "username": userName,
@@ -27,16 +46,27 @@ class AuthViewModel: NSObject, ObservableObject {
             ]
             
             Firestore.firestore().collection("users").document(user.uid).setData(data){_ in
-                print("Debug: User data added")
+                self.didAuthenticateUser = true
+                print("data added")
             }
         }
     }
     
-    func profileUpdate(){
-        
+    func profileUpdate(image: UIImage){
+        guard let uid = currentTempUser?.uid else { return }
+        ImageUploader.imageUpload(image: image) { imageUrl in
+            Firestore.firestore().collection("users").document(uid).updateData(["profileImageUrl" : imageUrl]) {_ in
+                print("Debug: Successfully updated userdata")
+            }
+        }
     }
     
     func signOut() {
-        
+        do {
+            try Auth.auth().signOut()
+            userSession = nil
+        }  catch let signOutError as NSError {
+            print("Error signing out: %@", signOutError)
+          }
     }
 }

@@ -16,7 +16,7 @@ struct SwiftUIChatAppApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            RegistrationView()
+            ContentView().environmentObject(AuthViewModel())
         }
     }
 }
